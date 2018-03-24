@@ -1,0 +1,28 @@
+# ------------------------------------------------------------------------------------------------
+# 
+# IGNORE THIS FILE IF NPC's ARE TOGGLED OFF!
+# 
+# NPC config file! All NPC data/information will be stored here!
+# 
+# IF THE CONFIGS ARE DONE WITH A YAML ERROR, IT WILL RESET TO ITS DEFAULT STATE!
+# MAKE SURE YOU HAVE BACKUPS BEFORE RELOADING THE CONFIGS
+# 
+# Holograms:
+#   Text: <Edit the lines for the NPC Holograms>
+#   - '&b%NPCName%'
+#   - '&eA MiningFlares NPC' <I suggest keeping this so its easy to recognise the plugins NPC's>
+# 
+# This NPC config area won't be generated on initilization, only when an NPC is created!
+# 
+# NPCS: <Only edit this data in-game>
+#   1:
+#     Skin: TheTomTom3901
+#     Name: Test
+#     Location: world, 0.0, 5.0, 0.0, 5, 7 <Information purely for methods, DO NOT EDIT!>
+# 
+# ------------------------------------------------------------------------------------------------
+
+Holograms:
+  Text:
+  - '&b%NPCName%'
+  - '&eA MiningFlares NPC'

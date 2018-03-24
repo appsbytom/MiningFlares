@@ -1,0 +1,131 @@
+# --------------------------------------------------------------------------------
+# 
+# Messages config file! All messages sent by this plugin can be edited here!
+# 
+# IF THE CONFIGS ARE DONE WITH A YAML ERROR, IT WILL RESET TO ITS DEFAULT STATE!
+# MAKE SURE YOU HAVE BACKUPS BEFORE RELOADING THE CONFIGS
+# 
+# To disable the broadcast message when opening a crate set BroadcastPrize: ''
+# 
+# --------------------------------------------------------------------------------
+
+Flares:
+  Commands:
+    TargetNotOnline: '&7Sorry but &e%Player% &7is not online!'
+    NotInteger: '&7Please use an integer'
+    TargetMessage: '&7You have been given %Amount% %FlareName% &7by %Player%'
+    PlayerMessage: '&7You have given %Player% &7%Amount% %FlareName%'
+    0%Chance: '&cYou cannot spawn in a flare with 0%!'
+    NoPerms: '&4You do not have permissions to give flares'
+  Events:
+    FlareDisabled: '%FlareName% is disabled!'
+    FlareRecieved: '&7You found a %FlareName%'
+Loot:
+  ItemAdded: '&7Held item added to the %Tier% &7rewards with the lootID &e%lootID%'
+  NotInteger: '&7Please use an integer'
+  EmptyHand: '&7You need an item in your hand to add loot!'
+  LootDeleted: '&7Loot deleted from %Tier% &7rewards with the lootID &e%lootID%'
+  NoLoot: '&7There is no loot with the lootID &e%lootID%'
+  InfoLayout:
+    Start:
+    - ''
+    - '&7-=-=- &6MiningFlares Loot &7-=-=-'
+    Tier: '&eTier: %Tier%'
+    LootID: '  &eLootID&7: %lootID%'
+    ItemID: '  &eID&7: %ItemID%'
+    DataID: '  &eData&7: %DataID%'
+    Name: '  &eName&7: %ItemName%'
+    Lore: '  &eLore&7: '
+    Lores: '  &e-&7 %Lore%'
+    Enchant: '  &eEnchants&7: '
+    Enchants: '  &e-&7 %Enchants%'
+    Chance: '  &eChance&7: %Chance%%'
+    End:
+    - '&7-=-=- &6MiningFlares Loot &7-=-=-'
+    - ''
+  SetItemID: '&7You have set the itemID for lootID:&e %lootID% &7in %Tier% &7rewards to &e%ItemID%'
+  SetDataID: '&7You have set the dataID for lootID:&e %lootID% &7in %Tier% &7rewards to &e%DataID%'
+  SetName: '&7You have set the name for lootID:&e %lootID% &7in %Tier% &7rewards to &e%ItemName%'
+  SetLore: '&7You have set the lore for lootID:&e %lootID% &7in %Tier% &7rewards to &e%Lore%'
+  SetEnchant: '&7You have set the enchants for lootID:&e %lootID% &7in %Tier% &7rewards to &e%Enchant%'
+  WrongEnchantFormat: '&7Please use the correct format! &eEg: DAMAGE_ALL;1'
+  UnusableEnchant: ' &e%Enchant% &7is not a usable enchant/enchants'
+  WrongUser: '&cLoot cannot be edited by console!'
+  NoPerms: '&4You do not have permissions to edit loot'
+Rod:
+  Crate:
+    Enable: '&7Crate enabled'
+    CreationSelection: '&7Choose a crate tier to create'
+    CreationCancelled: '&7The crate creation has been cancelled'
+    CreationAlreadyBegun: '&7Crate creation has already begun'
+    InvalidCrate: '&e%Message% &7is not a valid crate name'
+    NotACrate: '&7This block is not a crate'
+    AlreadyCrate: '&7There is already a crate here'
+    ConfigDisabled: '&7Crates are not enabled'
+  NPC:
+    Enable: '&7NPC enabled'
+    Create: '&7NPC created with the skin &e%Skin% &7and name &e%NPCName%'
+    Delete: '&7NPC removed with the NPCiD &e%NPCID%'
+    CreationSelection: '&7Choose a &eSKIN &7and &eNAME &7for the NPC'
+    CreationCancelled: '&7NPC creation has been cancelled'
+    CreationAlreadyBegun: '&7NPC creation has already begun'
+    InvalidFormat: '&7Incorrect format, use &eSKIN&7,&eNAME'
+    ConfigDisabled: '&7NPCs are not enabled'
+  Events:
+    DeleteEnable: '&7Delete enabled'
+    CreateEnable: '&7Create enabled'
+    InventoryClick: '&7Items cannot be moved while using the rod'
+    CreativeMode: '&7You cannot enter &eCREATIVE &7mode with rod mode enabled'
+    DropItem: '&7Items cannot be dropped while using the rod'
+  Commands:
+    Enable: '&7Rod mode enabled'
+    Disable: '&7Rod mode disabled'
+    EmptyHand: '&7Your hand is not empty'
+    CreativeMode: '&7Creative players cannot use the rod'
+    WrongUser: '&cThe console cannot use the MiningFlare rod'
+    NoPerms: '&4You do not have permissions to give the MiningFlare rod'
+NPC:
+  Commands:
+    NotNPC: '&7That NPC does not exist. Use &e/Mflare Npc List &7to see all NPCiDs'
+    SetSkin: '&7NPCs skin set to &e%Skin%'
+    SetName: '&7NPCs name set to &e%NPCName%'
+    List:
+      - ' '
+      - '&7-=-=- &6MiningFlares NPCs &7-=-=-'
+      - '&eNPCiD&7: %NPCID%'
+      - '  &eName&7: %NPCName%'
+      - '  &eSkin&7: %Skin%'
+      - '&7-=-=- &6MiningFlares NPCs &7-=-=-'
+      - ' '
+    NoNPCs: '&7There are no NPCs created'
+    NPCInfo: '&eNPCiD&7: %NPCID% &eName&7: %NPCName% &eSkin&7: %Skin% &eLocation&7: %NPCLocation%'
+    TpToNPC: '&7You have been teleported to the NPC with the NPCiD &e%NPCID%'
+    TpNPCHere: '&7The NPC with the NPCiD &e%NPCID% &7has been teleported to your location'
+    NotInteger: '&7Please use an integer'
+    NoPerms: '&4You do not have permissions to edit NPCs'
+    WrongUser: '&cNPCs cannot be edited by console!'
+  Events:
+    OpeningFlare: '&7Your opening a %FlareName% &7....'
+    EmptyHand: '&7Please hold a flare to be redeemed!'
+    CooldownTime: 5
+    CooldownMessage: '&7You can use this NPC again in &e%Time% &7seconds'
+Crates:
+  Commands:
+    NoPerms: '&4You do not have permissions to use crate functions'
+    WrongUser: '&cConsole cannot use any crate functions!'
+    NoCratePlaced: '&7There is no %CrateName% &7created to tp too'
+  Events:
+    CrateBroken: '&7Crate removed with the name %CrateName%'
+    CratePlaced: '&7Crate created with the name %CrateName%'
+    AlreadyPlaced: '&7A crate with the name %CrateName% &7is already created'
+    WrongItem: '&7You need a %FlareName% &7to open this crate'
+  Animations:
+    PrizeGiven: '&7You have won &e%PrizeName% &7x%Amount%'
+    BroadcastPrize: '&e%PlayerName% &7has won &e%PrizeName% &7x%Amount%'
+Rewards:
+  MenuOpening: '&7Rewards menu opening...'
+  WrongUser: '&cRewards GUI cannot be opened via console!'
+  NoPerms: '&4You do not have permissions to view the rewards'
+Errors:
+  WrongFormat: '&7Use &e/Mflare Help &7for correct usage!'
+  NoCmd: '&7Use &e/Mflare Help &7to see all usable commands!'

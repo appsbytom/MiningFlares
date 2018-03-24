@@ -1,0 +1,47 @@
+# --------------------------------------------------------------------------------
+# 
+# IGNORE THIS FILE IF CRATES ARE TOGGLED OFF!
+# 
+# Crates config file! All crates data/information will be stored here!
+# 
+# IF THE CONFIGS ARE DONE WITH A YAML ERROR, IT WILL RESET TO ITS DEFAULT STATE!
+# MAKE SURE YOU HAVE BACKUPS BEFORE RELOADING THE CONFIGS
+# 
+# Holograms:
+#   Text: <Edit the lines for the Crate Holograms>
+#   - '&b%CrateName%'
+#   - '&eLeft click to preview'
+#   - '&eRight click to redeem'
+# 
+# Crates:
+#   Opening: <!Restart server on change!>
+#     Generic: true
+#     Roulette: false
+#     Quick: false
+# 
+#   Tier1:
+#     Name: '&a&lCommon Crate' <Edit the crate name>
+#     Loc: world, 56, 20, 2 <Information purely for methods, DO NOT EDIT!>
+# 
+# --------------------------------------------------------------------------------
+
+Holograms:
+  Text:
+  - '&b%CrateName%'
+  - '&eLeft click to preview'
+  - '&eRight click to redeem'
+Crates:
+  Opening:
+    Generic: true
+    Roulette: false
+    Quick: false
+  Tier1:
+    Name: '&a&lCommon Crate'
+  Tier2:
+    Name: '&6&lUn-Common Crate'
+  Tier3:
+    Name: '&9&lRare Crate'
+  Tier4:
+    Name: '&c&lLegendary Crate'
+  Tier5:
+    Name: '&5&lMystical Crate'

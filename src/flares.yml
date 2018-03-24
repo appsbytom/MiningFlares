@@ -1,0 +1,209 @@
+# --------------------------------------------------------------------------------------------------------------------------------------
+# 
+# MiningFlare 1.2 --- [TomTom]
+# Give your players a item to redeem for mining blocks! Configurable chances, items, messages and GUI for ultimate customisability
+# 
+# IF THE CONFIGS ARE DONE WITH A YAML ERROR, IT WILL RESET TO ITS DEFAULT STATE!
+# MAKE SURE YOU HAVE BACKUPS BEFORE RELOADING THE CONFIGS
+# 
+# All 5 tiers of rewards are very simple to configure and can be fully customised to how you want it!
+# The reward configs are now in different files making it easier to store and customise each tier!
+# 
+# Plugin:
+#   Prefix: '&6&l[MiningFlares]  <Edit the prefix in-front of all messages>
+#   BStats: true <Gathering data about what redeem method you have enabled, will make future updates better suited to users>
+# 
+# Redeeming: <!Restart server on change!> <Toggle which method of redeeming you want to use>
+#   Click: true
+#   NPC: false
+#   Crates: false
+# 
+# MiningFlares:
+#   tier1flare:
+#     Item: 401 <Make sure the item ID is correct, if you dont know it use http://minecraft-ids.grahamedgecombe.com/ to get them>
+#     Data: 0 <Put the data value if the item needs it>
+#     Name: '&a&lCommon Flare' <Add the items name, as shown colour codes do work here>
+#     Lore:
+#     - ' ' <Again colour codes fully work here so add as much and as many lines as you need>
+#     - '&aThe easiest Flare to find!'
+#     - '&aClick to receive some peasant loot!'
+#     Enchants: <Use https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html for valid names>
+#     - ENCHANTMENT;LEVEL
+#     - LUCK;10
+#     Chance: 2 <This will determine the percentage that the flares will drop>
+#     RewardsGUI:
+#       GUIName: '&c&lCommon Rewards' <Name of the GUI opened when opening Tier1 section>
+#       GUISize: 9 <Size of Tier1 rewards GUI, increments of 9, max of 54>
+#       Item: 160 <Make sure the item ID is correct, if you dont know it use http://minecraft-ids.grahamedgecombe.com/ to get them>
+#       Data: 5 <If your item uses data for a different version (Eg: Glass) put the data here>
+#       Glow: false <Set the item to be glowing in the GUI>
+#       Name: '&a&lCommon Flare'
+#       Lore:
+#       - '&7Click to see the Tier1 rewards!'
+#       Slot: 2 <This will set the slot in the GUI that is used. In Java it starts at 0 so be aware of that>
+#     WinningsGUI:
+#       Name: '&c&lCommon Box'
+# 
+#   tier5flare:
+#     Item: 401
+#     Data: 0
+#     Name: '&5&lMystical Flare'
+#     Lore:
+#     - ' '
+#     - '&5The mystery never ends!'
+#     - '&5Only the luckiest prisoners find these!'
+#     Enchants:
+#     - ENCHANTMENT;LEVEL
+#     - LUCK;10
+#     Chance: 0.001
+#     RewardsGUI:
+#       GUIName: '&c&lMystical Rewards'
+#       GUISize: 9
+#       Item: 160
+#       Data: 2
+#       Glow: false
+#       Name: '&5&lMystical Flare'
+#       Lore:
+#       - '&7Click to see the Tier5 rewards!'
+#       Slot: 6
+#     WinningsGUI:
+#       Name: '&c&lMystical Box'
+# 
+#   GUIFiller: <This will fill out the remaining 4 spaces in the rewards GUI>
+#     GUIName: '&c&lMining Flare Rewards'
+#     Item: 160 <Choose an item ID>
+#     Data: 7 <If a data value is needed (Eg for glass) put here>
+#     Glow: false
+#     Name: ' ' <Add a name for the filler here, best to leave it empty to fully get the filler effect>
+# 
+# --------------------------------------------------------------------------------------------------------------------------------------
+
+Plugin:
+  Prefix: '&6&l[MiningFlares] '
+  BStats: true
+Redeeming:
+  Click: true
+  NPC: false
+  Crates: false
+MiningFlares:
+  tier1flare:
+    Item: 401
+    Data: 0
+    Name: '&a&lCommon Flare'
+    Lore:
+    - ''
+    - '&aThe easiest Flare to find!'
+    - '&aClick to receive some peasant loot!'
+    Enchants:
+    - LUCK;10
+    Chance: 2
+    RewardsGUI:
+      GUIName: '&c&lCommon Rewards'
+      GUISize: 9
+      Item: 160
+      Data: 5
+      Glow: false
+      Name: '&a&lCommon Flare'
+      Lore:
+      - '&7Click to see the Tier1 rewards!'
+      Slot: 2
+    WinningsGUI:
+      Name: '&c&lCommon Box'
+  tier2flare:
+    Item: 401
+    Data: 0
+    Name: '&6&lUn-Common Flare'
+    Lore:
+    - ''
+    - '&6Slightly better than before!'
+    - '&6Click to receive some cool loots!'
+    Enchants:
+    - LUCK;10
+    Chance: 1
+    RewardsGUI:
+      GUIName: '&c&lUn-Common Rewards'
+      GUISize: 9
+      Item: 160
+      Data: 1
+      Glow: false
+      Name: '&6&lUn-Common Flare'
+      Lore:
+      - '&7Click to see the Tier2 rewards!'
+      Slot: 3
+    WinningsGUI:
+      Name: '&c&lUn-Common Box'
+  tier3flare:
+    Item: 401
+    Data: 0
+    Name: '&9&lRare Flare'
+    Lore:
+    - ''
+    - '&9Rare find!'
+    - '&9The rarity of these is unknown!'
+    Enchants:
+    - LUCK;10
+    Chance: 0.1
+    RewardsGUI:
+      GUIName: '&c&lRare Rewards'
+      GUISize: 9
+      Item: 160
+      Data: 11
+      Glow: false
+      Name: '&9&lRare Flare'
+      Lore:
+      - '&7Click to see the Tier3 rewards!'
+      Slot: 4
+    WinningsGUI:
+      Name: '&c&lRare Box'
+  tier4flare:
+    Item: 401
+    Data: 0
+    Name: '&c&lLegendary Flare'
+    Lore:
+    - ''
+    - '&cLegends only speak of these!'
+    - '&cYou never know what you''ll get!'
+    Enchants:
+    - LUCK;10
+    Chance: 0.01
+    RewardsGUI:
+      GUIName: '&c&lLegendary Rewards'
+      GUISize: 9
+      Item: 160
+      Data: 14
+      Glow: false
+      Name: '&c&lLegendary Flare'
+      Lore:
+      - '&7Click to see the Tier4 rewards!'
+      Slot: 5
+    WinningsGUI:
+      Name: '&c&lLegendary Box'
+  tier5flare:
+    Item: 401
+    Data: 0
+    Name: '&5&lMystical Flare'
+    Lore:
+    - ''
+    - '&5The mystery never ends!'
+    - '&5Only the luckiest prisoners find these!'
+    Enchants:
+    - LUCK;10
+    Chance: 0.001
+    RewardsGUI:
+      GUIName: '&c&lMystical Rewards'
+      GUISize: 9
+      Item: 160
+      Data: 2
+      Glow: false
+      Name: '&5&lMystical Flare'
+      Lore:
+      - '&7Click to see the Tier5 rewards!'
+      Slot: 6
+    WinningsGUI:
+      Name: '&c&lMystical Box'
+GUIFiller:
+  GUIName: '&c&lMining Flare Rewards'
+  Item: 160
+  Data: 7
+  Glow: false
+  Name: ' '

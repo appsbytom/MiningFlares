@@ -1,0 +1,95 @@
+# -----------------------------------------------------------------------------------------------------------------------------------
+# 
+# Tier3 config file! This will hold all the information for Tier3 rewards
+# 
+# IF THE CONFIGS ARE DONE WITH A YAML ERROR, IT WILL RESET TO ITS DEFAULT STATE!
+# MAKE SURE YOU HAVE BACKUPS BEFORE RELOADING THE CONFIGS
+# 
+# FlareRewards:
+#   1:
+#     Item: 298 <Make sure the item ID is correct, if you dont know it, use http://minecraft-ids.grahamedgecombe.com/ to get them>
+#     Data: 0 <Add the data if needed. Eg: Glass Panes, Player Heads (player name)>
+#     Amount: 1
+#     Name: '&f&ltest' <Leave empty if u dont want a custom name>
+#     Lore:
+#     - '&ftest' <Keep this form while adding lore or again the config will reset!>
+#     Enchants: <Use https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html for valid names>
+#     - ENCHANTMENT;LEVEL
+#     - PROTECTION_ENVIRONMENTAL;1
+#     Chance: 50
+# 
+# Each tier has 9 items but this breakdown only shows 1 so to not spam the file but just give examples!
+# 
+# -----------------------------------------------------------------------------------------------------------------------------------
+
+FlareRewards:
+  '1':
+    Item: 383
+    Data: 120
+    Amount: 5
+    Name: ''
+    Chance: 10
+  '2':
+    Item: 368
+    Data: 0
+    Amount: 16
+    Name: '&5Endest Pearl'
+    Chance: 10
+  '3':
+    Item: 153
+    Data: 0
+    Amount: 32
+    Name: ''
+    Chance: 15
+  '4':
+    Item: 276
+    Data: 0
+    Amount: 1
+    Name: '&b&lBlade of the Gods'
+    Enchants:
+    - DAMAGE_ALL;3
+    - FIRE_ASPECT;1
+    Chance: 5
+  '5':
+    Item: 301
+    Data: 0
+    Amount: 1
+    Name: ''
+    Lore:
+    - ''
+    - '&cThe falling spikes'
+    Enchants:
+    - PROTECTION_FALL;4
+    - THORNS;5
+    Chance: 10
+  '6':
+    Item: 314
+    Data: 0
+    Amount: 1
+    Name: '&eKings Crown'
+    Enchants:
+    - LUCK;1
+    - THORNS;1
+    Chance: 20
+  '7':
+    Item: 327
+    Data: 0
+    Amount: 1
+    Name: '&4Eternal Flame'
+    Enchants:
+    - LUCK;10
+    Chance: 15
+  '8':
+    Item: 56
+    Data: 0
+    Amount: 64
+    Name: ''
+    Chance: 5
+  '9':
+    Item: 120
+    Data: 0
+    Amount: 12
+    Name: '&5&lPortal Casing'
+    Lore:
+    - '&9Step into the void'
+    Chance: 10

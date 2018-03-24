@@ -1,0 +1,35 @@
+name: MiningFlares
+version: 1.2
+main: me.Tom.MiningFlares.PluginCore
+softdepend: [HolographicDisplays, WorldGuard, Citizens]
+author: TomTom
+description: Get a set item when mining to redeem! Fully customisable items and rewards, easy to use config options
+
+commands:
+    mflare:
+        usage: /<command>
+        aliases: [miningflare, miningflares]
+        description: Control every aspect of MiningFlares with this one command!
+        
+permissions:
+    mflare.rewards:
+        description: Permission to open the rewards menu
+        default: true
+    mflare.give:
+        description: Permission to give flares to players
+        default: op
+    mflare.editloot:
+        description: Permission to edit the loot from in-game
+        default: op
+    mflare.reload:
+        description: Permission to reload the MiningFlares configs/plugin
+        default: op
+    mflare.npcs:
+        description: Permission to edit NPC's
+        default: op
+    mflare.crates:
+        description: Permission to edit crates
+        default: op
+    mflare.rod:
+        descrition: Permission to use rod mode
+        default: op
